@@ -1,0 +1,13 @@
+db/
+fpga_test_clock/
+incremental_db/
+output_files/
+*log
+*.csv
+*.log
+*.bsf
+*.bak
+*.bdf
+*.qpf
+*.qsf
+*.qwss
