@@ -48,9 +48,12 @@ module scan_dig(		//7段数码管动态扫描模块
 	end
 
 	//根据数码管点亮选择计数器确定待显示的数值及数码管选择信号
-	always @(count or h_cntH or h_cntL or m_cntH or m_cntL or s_cntH or s_cntL or mode)   						
+	always @(count or h_cntH or h_cntL or m_cntH or m_cntL or s_cntH or s_cntL or mode or rstn)   						
 	begin
-		if(mode == 0)
+
+		if(rstn == 0)
+			dig_r = 8'b1111_1111;
+		else if(mode == 0)
 		begin
 			case(count)							
 			3'd0:
