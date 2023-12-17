@@ -11,8 +11,7 @@ set_location_assignment PIN_T15 -to SetMinKey
 set_location_assignment PIN_T18 -to SetHrKey 
 set_location_assignment PIN_M22 -to mode
 set_location_assignment PIN_N21 -to CtrlBell
-set_location_assignment PIN_A6 -to alarm
-set_location_assignment PIN_G8 -to radio
+set_location_assignment PIN_A6  -to alarm     
 
 set_location_assignment PIN_R16	-to seg[0]
 set_location_assignment PIN_P17	-to seg[1]
